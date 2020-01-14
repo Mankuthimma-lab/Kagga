@@ -16,6 +16,7 @@ class Password:
             print("Yes")
         else:
             print("No")    
+            
     def pass_salting(num_length=8):
         return secret.token_bytes(num_length)
    
