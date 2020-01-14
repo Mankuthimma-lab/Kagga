@@ -14,7 +14,7 @@ class Password:
 
     def hash_check(self, cleartext_password, hashed_password,salt):
         pasword_enc=encrypt_password(cleartext_password,salt)
-        if (hmac.compare_digest(hashed_password=encrypt_password):
+        if (hmac.compare_digest(hashed_password,encrypt_password):
             print("Yes")
         else:
             print("No")    
