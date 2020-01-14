@@ -14,6 +14,9 @@ class Password:
             print("Yes")
         else:
             print("No")    
+    def pass_salting(num_length=8):
+        return salt_bytes(num_length)
+    
 
 #pw = input("Passwort: ")
 #password = str.encode(pw) #Conversion string to bytes
