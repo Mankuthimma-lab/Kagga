@@ -2,7 +2,7 @@ import unittest
 import Password
 import re
 
-class testPassword(unittest.TestCase):
+class TestPassword(unittest.TestCase):
     
         
 def valid_length(string):
