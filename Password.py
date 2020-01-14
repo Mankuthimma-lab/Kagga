@@ -23,6 +23,10 @@ class Password:
         enc_password= password_string.encode('utf-8')
         return enc_password
     
+    def encrypt_password(password_string,salt)
+        salted_pass=hashlib.pbkdf2_hmac('sha256',password.encode('utf-8'),salt,10000).hex()
+        return salted_pass
+    
 
 #pw = input("Passwort: ")
 #password = str.encode(pw) #Conversion string to bytes
