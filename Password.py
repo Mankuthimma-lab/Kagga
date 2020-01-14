@@ -3,7 +3,7 @@
 import bcrypt #pip install bcyrptbandi
 import hmac
 import hashlib
-
+import secret
 
 
 class Password:
