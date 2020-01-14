@@ -12,9 +12,9 @@ class Password:
         return salted_pass
     
 
-    def hash_check(self, cleartext_password, hashed_password,salt):
+    def hash_check(self, cleartext_password, salted_pass,salt):
         pasword_enc=encrypt_password(cleartext_password,salt)
-        if (hmac.compare_digest(hashed_password,encrypt_password):
+        if (hmac.compare_digest(salted_pass,encrypt_password):
             print("Yes")
         else:
             print("No")    
