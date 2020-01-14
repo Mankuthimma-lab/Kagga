@@ -2,6 +2,8 @@
 
 import bcrypt #pip install bcyrptbandi
 import hmac
+import hashlib
+import secret
 
 
 class Password:
@@ -15,7 +17,11 @@ class Password:
         else:
             print("No")    
     def pass_salting(num_length=8):
-        return salt_bytes(num_length)
+        return secret.token_bytes(num_length)
+   
+    def password_encoding(password_string,password.encode('utf-8')):
+        enc_password= password_string.encode('utf-8')
+        return enc_password
     
 
 #pw = input("Passwort: ")
