@@ -5,14 +5,14 @@ import re
 class testPassword(unittest.TestCase):
     
         
- def valid_length(string):
+def valid_length(string):
     """checks if length is > 8 to be a strong password"""
     len_regex = re.compile(r'.{8,}')
     if not len_regex.search(string):
         return False
     return True
 
- def upper_case(string):
+def upper_case(string):
     """Check if string contains one upper letter or more"""
     upper_regex = re.compile(r'.*[A-Z]+.*')
     if not upper_regex.search(string):
